@@ -1,0 +1,103 @@
+/* Add styles here */
+h1 {
+  color: blueviolet;
+}
+
+.d-flex {
+  display: flex;
+  list-style-type: none;
+}
+
+.list-item {
+  justify-content: space-between;
+  flex: 2;
+}
+
+.main {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.btn {
+  border: 1px solid blueviolet;
+  margin: 0 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.btn:hover {
+  background-color: blueviolet;
+  color: aliceblue;
+  transition: 0.5s;
+}
+
+.food-container {
+  width: 30vw;
+  height: 60vh;
+  border: 1px solid black;
+  margin-left: 35%;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.food-container:target {
+  height: 60vh;
+}
+
+.food-items {
+  padding: 0;
+  margin: 0;
+}
+
+.list-food-item {
+  list-style-type: none;
+  width: 100%;
+  color: aliceblue;
+  overflow: hidden;
+}
+
+.list-food-item:hover {
+  color: blueviolet;
+}
+
+.show {
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 60vh;
+  }
+}
+
+.album-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+}
+
+h2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  color: brown;
+}
+
+.square {
+  background-color: blue;
+  width: 2rem;
+  height: 2rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-items: center;
+  margin-left: 35%;
+}
+
+.square-content {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  align-items: center;
+}
